@@ -26,3 +26,7 @@ end
 # STEP 6
 students.delete(:cohort2)
 display(students)
+
+# STEP 7
+total_students = students.each.inject(0) {|cohort, number_students| cohort += number_students[1]}
+puts "Total students across all cohorts is: #{total_students}."
