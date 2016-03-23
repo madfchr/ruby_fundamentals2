@@ -11,3 +11,6 @@ end
 
 # STEP 3
 students[:cohort4] = 43
+
+# STEP 4
+puts students.keys
