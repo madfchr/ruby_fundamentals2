@@ -5,9 +5,12 @@ students = {
   :cohort3 => 22
 }
 # STEP 2
-students.each do |name, number|
-  puts "#{name}: #{number} students"
+def display(students)
+  students.each do |name, number|
+    puts "#{name}: #{number} students"
+  end
 end
+display(students)
 
 # STEP 3
 students[:cohort4] = 43
@@ -19,3 +22,7 @@ puts students.keys
 students.each do |name, number|
   puts "#{name}: #{(number * 0.5).to_i + number} students"
 end
+
+# STEP 6
+students.delete(:cohort2)
+display(students)
