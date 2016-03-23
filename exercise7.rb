@@ -8,7 +8,6 @@ students = {
 students.each do |name, number|
   puts "#{name}: #{number} students"
 end
-# def cohort_students(name, number)
-#   do |name, number| puts "#{name}: #{number} students"
-#   end
-# end
+
+# STEP 3
+students[:cohort4] = 43
