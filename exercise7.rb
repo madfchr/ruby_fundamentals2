@@ -20,8 +20,9 @@ puts students.keys
 
 # STEP 5
 students.each do |name, number|
-  puts "#{name}: #{(number * 0.5).to_i + number} students"
+  students[name] = (number * 1.05).to_i
 end
+display(students)
 
 # STEP 6
 students.delete(:cohort2)
